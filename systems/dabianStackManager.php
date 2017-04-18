@@ -10,7 +10,8 @@
  * Class dabianStackManager extend stackManager and extend stack manager functionality for Dabian OS.
  */
 
-Class dabianStackManager extends stackManager{
+Class dabianStackManager extends stackManager
+{
 
     /**
      * Single ton pattern instance reuse.
@@ -24,7 +25,8 @@ Class dabianStackManager extends stackManager{
     /**
      * dabianStackManager Class instance.
      */
-    public static function getInstance(){
+    public static function getInstance()
+    {
         if ( ! isset( self::$_instance ) ) {
             self::$_instance = new self();
         }

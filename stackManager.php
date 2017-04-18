@@ -8,7 +8,8 @@
 /**
  * Class stackManager abstract class to define some standard architecture to extends.
  */
-abstract class stackManager{
+abstract class stackManager
+{
 
     // Force child class to create instance as per single tone pattern.
     abstract public static function getInstance();
@@ -34,4 +35,22 @@ abstract class stackManager{
     // Force child class to create package upgrade check.
     abstract public function checkUpgrade();
 
+    public static function getStackManagerInstance()
+    {
+        // Based on OS, it will return instance of debianStackManager() or macosStackManager().
+        $os = get_system_var();
+        if('debian' === $os) {
+            return debianStackManager::getInstance();
+        } elseif('osx' === $os) {
+            // return macosStackManager::getInstance();
+        }
+    }
+
+    /**
+     * Get system related information.
+     */
+    public function get_system_var()
+    {
+        return 'dabian';
+    }
 }

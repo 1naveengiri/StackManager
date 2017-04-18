@@ -1,0 +1,16 @@
+{
+    "name": "rt/stack-manager",
+    "description": "Stack Manager to install, update Nginx, PHP, MySQL.",
+    "type": "composer-plugin",
+    "require": {
+        "php": "5.5.9"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rtcamp",
+            "email": "naveen.giri@rtcamp.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

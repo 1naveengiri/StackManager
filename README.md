@@ -7,5 +7,6 @@ Its stack manager for EasyEngine. It will install Nginx, PHP, MySQL.
     ├── system                  # System files (here all supported system for stack manager will listed)
     │   ├── dabianStackManager.php  # stackManager for Dabian System
     │   └── macStackManager.php     # stackManager for Mac System
+    │
     ├── stackManager.php  # StackManager abstact class that handle StackManager functionality for all supported systems.
     └── README.md

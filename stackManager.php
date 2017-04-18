@@ -38,7 +38,7 @@ abstract class stackManager
     public static function getStackManagerInstance()
     {
         // Based on OS, it will return instance of debianStackManager() or macosStackManager().
-        $os = get_system_var();
+        $os = 'debian';
         if('debian' === $os) {
             return debianStackManager::getInstance();
         } elseif('osx' === $os) {
@@ -46,11 +46,4 @@ abstract class stackManager
         }
     }
 
-    /**
-     * Get system related information.
-     */
-    public function get_system_var()
-    {
-        return 'dabian';
-    }
 }

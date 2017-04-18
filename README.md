@@ -1,5 +1,5 @@
 # ee-stackmanager
-Its stack manager for EasyEngine. It will install Nginx, PHP, MySQL. 
+Stack Manager provide a OOP's architecture to install, update, remove Nginx, PHP, MySQL.
 
 ### Directory structure
     .
